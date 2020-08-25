@@ -1,18 +1,22 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Hero from "./components/Help/hero";
-import Categories from "./components/Help/categories";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ContactWidget from "./components/contactWidget";
-import Faqs from "./components/Help/faqs";
+import Help from "./components/Help";
+import Category from "./components/Category";
 
 function App() {
   return (
-    <div className="Help">
-      <Hero />
-      <Categories />
-      <Faqs />
-      <ContactWidget />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Help} />
+          <Route path="/help" exact component={Help} />
+          <Route path="/category/:cat_name" component={Category} />
+        </Switch>
+        <ContactWidget />
+      </div>
+    </Router>
   );
 }
 

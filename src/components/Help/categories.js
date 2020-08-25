@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const cats = [
   {
     id: 1,
@@ -18,12 +19,12 @@ const cats = [
   },
   {
     id: 4,
-    title: "Echo Points",
+    title: "Eco Points",
     image: "echopoints.svg",
   },
   {
     id: 5,
-    title: "About Echocart",
+    title: "About Ecocart",
     image: "plane.svg",
   },
   {
@@ -40,13 +41,18 @@ const Categories = () => {
         <h2>Choose a category:</h2>
         <div className="cat_grid">
           {cats.map((cat) => (
-            <div key={cat.id} className="category">
-              <img
-                className="category_img"
-                src={require(`../../assets/images/${cat.image}`)}
-              />
-              <h3 className="category_title">{cat.title}</h3>
-            </div>
+            <Link
+              to={`/category/${cat.title.split(" ").join("")}`}
+              key={cat.id}
+            >
+              <div className="category">
+                <img
+                  className="category_img"
+                  src={require(`../../assets/images/${cat.image}`)}
+                />
+                <h3 className="category_title">{cat.title}</h3>
+              </div>
+            </Link>
           ))}
         </div>
       </Container>
