@@ -18,9 +18,24 @@
           text-align: center;
         }
       }
+      .form-group {
+        position: relative;
+        svg {
+          position: absolute;
+          font-size: 1.8rem;
+          top: 30%;
+          left: 2.5%;
+          color: $color-light;
+        }
+
+        ::placeholder {
+          color: $color-light;
+        }
+      }
       input {
-        padding: 2.4rem 1rem;
+        padding: 2.4rem 4rem;
         font-size: 1.4rem;
+        font-weight: 500;
       }
     }
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import { FaSearch } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -13,6 +14,7 @@ const Hero = () => {
                 type="text"
                 placeholder="Search for your question"
               />
+              <FaSearch />
             </Form.Group>
           </Col>
         </Row>
