@@ -16,6 +16,11 @@
     ::placeholder {
       color: $color-light;
     }
+    .autoContainer {
+      top: 4.5rem !important;
+      width: 35rem;
+      z-index: 1;
+    }
   }
   input {
     padding: 1.6rem 3.2rem;

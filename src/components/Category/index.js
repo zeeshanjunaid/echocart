@@ -8,9 +8,9 @@ import {
   Accordion,
   Button,
   Card,
-  Form,
 } from "react-bootstrap";
-import { FaChevronDown, FaSearch } from "react-icons/fa";
+import DropdownComponent from "../dropdownComponent";
+import { FaChevronDown } from "react-icons/fa";
 import faqs from "../../faqs";
 
 const Category = ({ match }) => {
@@ -21,13 +21,7 @@ const Category = ({ match }) => {
         <Tab.Container defaultActiveKey={activeCat ? activeCat : 1}>
           <Row>
             <Col sm={12} md={3}>
-              <Form.Group controlId="search">
-                <Form.Control
-                  type="text"
-                  placeholder="Search for your question"
-                />
-                <FaSearch />
-              </Form.Group>
+              <DropdownComponent />
               <Nav variant="link" className="flex-column">
                 {faqs.map((faq) => (
                   <Nav.Item key={faq.id}>
