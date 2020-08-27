@@ -1,3 +1,74 @@
-.category_page{
-    
+.category_page {
+  padding: 6rem 0;
+  .form-group {
+    position: relative;
+    svg {
+      position: absolute;
+      font-size: 1.6rem;
+      top: 25%;
+      left: 4%;
+      color: $color-light;
+      @media (max-width: 767px) {
+        left: 2%;
+      }
+    }
+
+    ::placeholder {
+      color: $color-light;
+    }
+  }
+  input {
+    padding: 1.6rem 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+  }
+
+  .nav-link {
+    color: $color-light-black;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    width: max-content;
+    padding: 1rem 0 0.3rem 0;
+
+    &.active {
+      border-bottom: 0.4rem solid $color-green;
+      font-weight: 500;
+    }
+  }
+  .tab_container {
+    box-shadow: 0 0.2rem 0.9rem 0 rgba($color-black, 0.03);
+    border: solid 0.1rem rgba($color-black, 0.06);
+    border-radius: 0.2rem;
+    padding: 4rem 3rem;
+    .title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 3rem;
+    }
+    .faq.accordion {
+      margin-bottom: 1rem;
+    }
+
+    .faq_title {
+      color: $color-green;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+      box-shadow: none !important;
+    }
+    .faq_body {
+      font-size: 1.4rem;
+      color: $color-light-black;
+      margin: 0.5rem 0;
+      background-color: $color-sky;
+    }
+  }
 }

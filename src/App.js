@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Help} />
           <Route path="/help" exact component={Help} />
-          <Route path="/category/:cat_name" component={Category} />
+          <Route path="/category/:cat_id" exact component={Category} />
         </Switch>
         <ContactWidget />
       </div>

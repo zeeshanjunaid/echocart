@@ -54,7 +54,7 @@ const Faqs = () => {
         <h2>Frequently asked questions:</h2>
         <Row>
           {faqs.map((faq) => (
-            <Col lg={6} md={6} sm={12} key={faq.id}>
+            <Col lg={12} md={12} sm={12} key={faq.id}>
               <Accordion className="faq">
                 <Accordion.Toggle
                   className="faq_title"

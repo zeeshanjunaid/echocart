@@ -41,10 +41,7 @@ const Categories = () => {
         <h2>Choose a category:</h2>
         <div className="cat_grid">
           {cats.map((cat) => (
-            <Link
-              to={`/category/${cat.title.split(" ").join("")}`}
-              key={cat.id}
-            >
+            <Link to={`/category/${cat.id}`} key={cat.id}>
               <div className="category">
                 <img
                   className="category_img"
