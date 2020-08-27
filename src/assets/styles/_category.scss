@@ -32,6 +32,11 @@
     font-weight: 400;
     width: max-content;
     padding: 1rem 0 0.3rem 0;
+    &:active {
+      border: 0px;
+      box-shadow: none;
+      outline: none;
+    }
 
     &.active {
       border-bottom: 0.4rem solid $color-green;
