@@ -28,7 +28,7 @@ const DropdownComponent = () => {
         onChange={onTextChange}
         value={search}
         type="text"
-        placeholder="Search for your question"
+        placeholder="Search"
       />
       <FaSearch />
       {display && (

@@ -62,7 +62,7 @@
     font-weight: 700;
     color: $color-black;
 
-    @media(max-width: 37.5em){
+    @media (max-width: 37.5em) {
       font-size: 2rem;
     }
   }
@@ -104,7 +104,7 @@
       }
       &_img {
         height: 16rem;
-        @media(max-width: 37.5em){
+        @media (max-width: 37.5em) {
           height: 20rem;
         }
       }
@@ -117,7 +117,7 @@
         line-height: 1.4;
         text-align: center;
         text-decoration-color: $color-green;
-        @media(max-width: 37.5em){
+        @media (max-width: 37.5em) {
           font-size: 2.2rem;
         }
       }
@@ -145,7 +145,7 @@
       text-decoration: none;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       font-weight: 500;
       width: 100%;
       letter-spacing: 0.05rem;
@@ -154,11 +154,8 @@
       box-shadow: none;
       text-align: left;
       padding-bottom: 0;
-      @media(max-width: 37.5em){
+      @media (max-width: 37.5em) {
         font-size: 2rem;
-      }
-      svg{
-        margin-left: 4rem;
       }
     }
     &_body {
@@ -169,7 +166,7 @@
       letter-spacing: 0.05rem;
       padding-top: 0;
       padding-bottom: 0;
-      text-align: center;
+      margin-top: 1rem;
     }
   }
 }
