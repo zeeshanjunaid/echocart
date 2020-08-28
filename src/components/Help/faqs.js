@@ -53,9 +53,9 @@ const Faqs = () => {
       <Container>
         <h2>Frequently asked:</h2>
         <Row>
-          {faqs.map((faq) => (
-            <Col lg={12} md={12} sm={12} key={faq.id}>
-              <Accordion className="faq">
+          <Col lg={12} md={12} sm={12} className="faqs">
+            {faqs.map((faq) => (
+              <Accordion className="faq" key={faq.id}>
                 <Accordion.Toggle
                   className="faq_title"
                   as={Button}
@@ -69,8 +69,8 @@ const Faqs = () => {
                   <Card.Body className="faq_body">{faq.answer}</Card.Body>
                 </Accordion.Collapse>
               </Accordion>
-            </Col>
-          ))}
+            ))}
+          </Col>
         </Row>
       </Container>
     </div>

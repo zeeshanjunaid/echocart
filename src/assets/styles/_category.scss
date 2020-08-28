@@ -41,12 +41,15 @@
   .nav-link {
     color: $color-light-black;
     font-size: 1.7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-weight: 400;
     width: max-content;
     color: $color-black;
     font-weight: 500;
     padding: 1rem 0 0.3rem 0;
+    @media (max-width: 37.5em) {
+      font-weight: 700;
+    }
     &:active {
       border: 0px;
       box-shadow: none;
@@ -72,10 +75,18 @@
     .faq.accordion {
       margin-bottom: 1rem;
     }
+    .faqs {
+      .faq {
+        border-top: 0.05rem solid rgba($color-light, 0.5);
+        &:last-child {
+          border-bottom: 0.05rem solid rgba($color-light, 0.5);
+        }
+      }
+    }
 
     .faq {
       margin-bottom: 1rem;
-      border-top: 0.05rem solid rgba($color-light, 0.5);
+
       padding: 1rem 0;
     }
     .faq_title {

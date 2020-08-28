@@ -32,7 +32,7 @@ const Category = ({ match }) => {
             </Col>
             <Col sm={12} md={9}>
               <Tab.Content className="tab_container">
-                <Tab.Pane eventKey="1">
+                <Tab.Pane eventKey="1" className="faqs">
                   <h2 className="title">Getting Started</h2>
                   <Accordion className="faq">
                     <Accordion.Toggle
@@ -83,7 +83,7 @@ const Category = ({ match }) => {
                     </Accordion.Collapse>
                   </Accordion>
                 </Tab.Pane>
-                <Tab.Pane eventKey="2">
+                <Tab.Pane eventKey="2" className="faqs">
                   <h2 className="title">Account Questions</h2>
                   <Accordion className="faq">
                     <Accordion.Toggle
@@ -102,16 +102,16 @@ const Category = ({ match }) => {
                     </Accordion.Collapse>
                   </Accordion>
                 </Tab.Pane>
-                <Tab.Pane eventKey="3">
+                <Tab.Pane eventKey="3" className="faqs">
                   <h2 className="title">Why Carbon Offset</h2>
                 </Tab.Pane>
-                <Tab.Pane eventKey="4">
+                <Tab.Pane eventKey="4" className="faqs">
                   <h2 className="title">Eco Points</h2>
                 </Tab.Pane>
-                <Tab.Pane eventKey="5">
+                <Tab.Pane eventKey="5" className="faqs">
                   <h2 className="title">About Ecocart</h2>
                 </Tab.Pane>
-                <Tab.Pane eventKey="6">
+                <Tab.Pane eventKey="6" className="faqs">
                   <h2 className="title">Privacy</h2>
                 </Tab.Pane>
               </Tab.Content>

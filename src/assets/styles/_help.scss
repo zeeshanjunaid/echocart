@@ -133,10 +133,18 @@
     font-weight: 700;
     color: $color-black;
   }
+  .faqs {
+    .faq {
+      border-top: 0.05rem solid rgba($color-light, 0.5);
+      &:last-child {
+        border-bottom: 0.05rem solid rgba($color-light, 0.5);
+      }
+    }
+  }
 
   .faq {
     margin-bottom: 1rem;
-    border-top: 0.05rem solid rgba($color-light, 0.5);
+
     padding: 1rem 0;
 
     &_title {

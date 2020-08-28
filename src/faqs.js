@@ -28,7 +28,7 @@ export default [
   },
   {
     id: 3,
-    category: "Why Carbon Offset",
+    category: "Why Carbon Offsets",
     content: [
       {
         id: 1,
@@ -44,7 +44,7 @@ export default [
   },
   {
     id: 4,
-    category: "Eco Points",
+    category: "EcoPoints",
     content: [
       {
         id: 1,
@@ -55,7 +55,7 @@ export default [
   },
   {
     id: 5,
-    category: "About Ecocart",
+    category: "About EcoCart",
     content: [
       {
         id: 1,
