@@ -72,12 +72,10 @@
       margin-bottom: 3rem;
       color: $color-black;
     }
-    .faq.accordion {
-      margin-bottom: 1rem;
-    }
     .faqs {
       .faq {
         border-top: 0.05rem solid rgba($color-light, 0.5);
+        padding: 1rem 0;
         &:last-child {
           border-bottom: 0.05rem solid rgba($color-light, 0.5);
         }
@@ -85,9 +83,7 @@
     }
 
     .faq {
-      margin-bottom: 1rem;
-
-      padding: 1rem 0;
+      padding: 0;
     }
     .faq_title {
       color: $color-green;
@@ -99,11 +95,10 @@
       font-weight: 500;
       width: 100%;
       letter-spacing: 0.05rem;
-      padding: 1rem;
+      padding:0 1rem;
       line-height: 1.8;
       box-shadow: none;
       text-align: left;
-      padding-bottom: 0;
       @media (max-width: 37.5em) {
         font-size: 2rem;
       }
