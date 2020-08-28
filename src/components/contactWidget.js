@@ -20,17 +20,21 @@ const ContactWidget = () => {
     tl.to(".contact_form", {
       duration: 1,
       ease: "power1.out",
-      y: 500,
+      y: 1000,
     }).to(".contact_btn", {
       duration: 0.3,
       ease: "power3.in",
       y: 0,
     });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <button className="contact_btn" onClick={setFormVisible}>
-        Contact us <FaEnvelope />
+        <span>Contact us</span> <FaEnvelope />
       </button>
       <div className={"contact_form hideform"}>
         <div className="contact_form__header" onClick={setBtnVisible}>
@@ -38,13 +42,13 @@ const ContactWidget = () => {
           <h4>Contact us</h4>
         </div>
         <div className="contact_form__body">
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group controlId="name">
               <Form.Label>Name</Form.Label>
               <Form.Control type="text" placeholder="Enter name" />
             </Form.Group>
             <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
             <Form.Group controlId="textarea">

@@ -14,17 +14,17 @@ const cats = [
   },
   {
     id: 3,
-    title: "Why Carbon Offset",
+    title: "Why Carbon Offsets",
     image: "trees.svg",
   },
   {
     id: 4,
-    title: "Eco Points",
+    title: "EcoPoints",
     image: "echopoints.svg",
   },
   {
     id: 5,
-    title: "About Ecocart",
+    title: "About EcoCart",
     image: "plane.svg",
   },
   {

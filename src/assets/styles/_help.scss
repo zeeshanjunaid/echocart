@@ -1,10 +1,22 @@
 .hero_section {
-  height: 60vh;
+  height: 50rem;
   background-color: #eaf6fa;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: contain;
+  background-size: 30%;
   background-image: url("../images/hero-bg.png");
+  @media (min-width: 112.5em) {
+    background-size: 30%;
+  }
+  @media (max-width: 75em) {
+    background-size: 35%;
+  }
+  @media (max-width: 56.25em) {
+    background-size: 40%;
+  }
+  @media (max-width: 37.5em) {
+    background-size: 45%;
+  }
 
   .container {
     height: 100%;
@@ -14,6 +26,7 @@
         font-weight: bold;
         font-size: 3.6rem;
         margin-bottom: 1.6rem;
+        color: $color-black;
         @media (max-width: 37.5em) {
           text-align: center;
         }
@@ -46,7 +59,12 @@
   h2 {
     margin-bottom: 2rem;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 700;
+    color: $color-black;
+
+    @media(max-width: 37.5em){
+      font-size: 2rem;
+    }
   }
 
   .cat_grid {
@@ -58,6 +76,9 @@
     }
     @media (max-width: 450px) {
       grid-template-columns: 1fr;
+    }
+    a {
+      text-decoration-color: $color-green;
     }
     .category {
       border: 0.1rem solid $color-light;
@@ -79,48 +100,66 @@
       cursor: pointer;
       &:hover {
         box-shadow: 0 2rem 2rem -2rem rgba($color-light-black, 0.5);
+        text-decoration-color: $color-green;
       }
       &_img {
-        height: 10rem;
+        height: 16rem;
+        @media(max-width: 37.5em){
+          height: 20rem;
+        }
       }
       &_title {
-        margin-top: 1.6rem;
+        margin-top: 2.6rem;
         color: $color-light-black;
         font-size: 1.8rem;
         text-transform: capitalize;
         font-weight: 500;
         line-height: 1.4;
         text-align: center;
+        text-decoration-color: $color-green;
+        @media(max-width: 37.5em){
+          font-size: 2.2rem;
+        }
       }
     }
   }
 }
 
 .faqs_section {
-  padding: 6rem 0;
+  padding-bottom: 6rem;
   h2 {
     margin-bottom: 2rem;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 700;
+    color: $color-black;
   }
 
   .faq {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    border-top: 0.05rem solid rgba($color-light, 0.5);
+    padding: 1rem 0;
+
     &_title {
       color: $color-green;
       font-size: 1.8rem;
       text-decoration: none;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       font-weight: 500;
       width: 100%;
       letter-spacing: 0.05rem;
       padding: 1rem;
-      border-bottom: 0.05rem solid rgba($color-light, 0.5);
       line-height: 1.8;
       box-shadow: none;
       text-align: left;
+      padding-bottom: 0;
+      @media(max-width: 37.5em){
+        font-size: 2rem;
+      }
+      svg{
+        margin-left: 4rem;
+      }
     }
     &_body {
       font-size: 1.6rem;
@@ -128,6 +167,9 @@
       color: $color-light-black;
       font-weight: 400;
       letter-spacing: 0.05rem;
+      padding-top: 0;
+      padding-bottom: 0;
+      text-align: center;
     }
   }
 }

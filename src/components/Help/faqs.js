@@ -51,7 +51,7 @@ const Faqs = () => {
   return (
     <div className="faqs_section">
       <Container>
-        <h2>Frequently asked questions:</h2>
+        <h2>Frequently asked:</h2>
         <Row>
           {faqs.map((faq) => (
             <Col lg={12} md={12} sm={12} key={faq.id}>
